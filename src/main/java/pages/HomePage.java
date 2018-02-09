@@ -20,6 +20,8 @@ public class HomePage {
         elements.stream().filter(element->element.getText().equals(linkName))
                 .findFirst().get().click();
         System.out.println("this is a test");
+        System.out.println("this is second test");
+        System.out.println("this is third test");
 
         /*for(WebElement element: elements){
             if(element.getText().equals(linkName)) {
