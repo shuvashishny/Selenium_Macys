@@ -14,7 +14,6 @@ public class HomePage {
                 By.xpath("//ul[@id='mainNavigationFobs']/li/a/span"));
 
         for(WebElement element: elements ){
-            Assert.assertEquals(element.getText().contains());
             System.out.println(element.getText());
         }
 
