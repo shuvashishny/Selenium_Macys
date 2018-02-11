@@ -7,7 +7,7 @@ import org.testng.annotations.DataProvider;
  */
 public class HomePageDataProvider {
 
-    @DataProvider(name = "MacysHomePageData")
+   @DataProvider(name = "MacysHomePageData")
     public static Object[][] getHomePageHeaderLinks(){
 
         Object[][] linksName=new Object[6][1];
@@ -19,4 +19,7 @@ public class HomePageDataProvider {
         linksName[5][0]= "HANDBAGS";
         return linksName;
     }
+
+
+
 }

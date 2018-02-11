@@ -7,9 +7,16 @@ import org.testng.annotations.Test;
  */
 public class HomePageTest {
 
-    @Test(dataProvider="MacysHomePageData", dataProviderClass=HomePageDataProvider.class)
+    @Test(dataProvider="MacysHomePageData", dataProviderClass= HomePageDataProvider.class)
     public void testHomePage(String linkName){
-        StartBrowser.openBroser().seeAllLinks(linkName);
+        StartBrowser.openBroser().seeAllLinks();
     }
+
+    @Test
+    public void secondTest(){
+        StartBrowser.openBroser();
+    }
+
+
 
 }
