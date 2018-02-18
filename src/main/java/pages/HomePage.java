@@ -22,7 +22,7 @@ public class HomePage {
         System.out.println("this is a test");
         System.out.println("this is second test");
         System.out.println("this is third test");
-
+        System.out.println("this is just testing");
         /*for(WebElement element: elements){
             if(element.getText().equals(linkName)) {
                 element.click();

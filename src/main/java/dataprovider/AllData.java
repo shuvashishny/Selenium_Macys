@@ -10,7 +10,7 @@ public class AllData {
 
     public static List<String> getAllData() {
 
-        List<String> linkNames = new ArrayList<>();
+        List<String> linkNames = new ArrayList<String>();
         linkNames.add("MEN");
         linkNames.add("HOME");
         linkNames.add("BED & BATH");
