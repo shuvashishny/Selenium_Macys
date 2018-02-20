@@ -12,4 +12,9 @@ public class HomePageTest {
         StartBrowser.openBroser().seeAllLinks(linkName);
     }
 
+    @Test
+    public void testNavNames(){
+        StartBrowser.openBroser().verifyLinkNamesPresent();
+    }
+
 }
