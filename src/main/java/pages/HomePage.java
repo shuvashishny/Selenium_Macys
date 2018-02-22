@@ -1,34 +1,44 @@
 package pages;
 
 import browser.StartBrowser;
+import dataprovider.AllData;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.Assert;
 
 
 import java.util.List;
 
 public class HomePage {
 
-    public void seeAllLinks(String linkName){
-        List<WebElement> elements = StartBrowser.driver.findElements(
-                By.xpath("//ul[@id='mainNavigationFobs']/li/a/span"));
+    List<WebElement> topNavs = StartBrowser.driver.findElements(
+            By.xpath("//a[@class=' top-nav']"));
 
-        for(WebElement element: elements ){
+    public void seeAllLinks(String linkName){
+        for(WebElement element: topNavs ){
             System.out.println(element.getText());
         }
 
-        elements.stream().filter(element->element.getText().equals(linkName))
+        topNavs.stream().filter(element-> element.getText().equals(linkName))
                 .findFirst().get().click();
-        System.out.println("this is a test");
-        System.out.println("this is second test");
-        System.out.println("this is third test");
 
-        /*for(WebElement element: elements){
+
+        /*for(WebElement element: topNavs){
             if(element.getText().equals(linkName)) {
                 element.click();
                 break;
             }
         }*/
 
+    }
+
+    public void verifyLinkNamesPresent(){
+
+        Assert.assertEquals(topNavs.size(), 6);
+
+        for(WebElement element : topNavs){
+            String str = element.getText();
+            Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
+        }
     }
 }
