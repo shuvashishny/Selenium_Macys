@@ -22,6 +22,7 @@ public class HomePage {
         System.out.println("this is second test");
         System.out.println("this is third test");
         System.out.println("this is forth test");
+        System.out.println("for test prozect is working");
 
         /*for(WebElement element: elements){
             if(element.getText().equals(linkName)) {

@@ -18,5 +18,6 @@ public class HomePageDataProvider {
         linksName[4][0]= "SHOES";
         linksName[5][0]= "HANDBAGS";
         return linksName;
+
     }
 }
