@@ -11,7 +11,7 @@ import java.util.concurrent.TimeUnit;
  */
 public class StartBrowser {
 
-    public static WebDriver driver = null;
+    public static WebDriver driver ;
     public static HomePage openBroser(){
         System. setProperty("webdriver.chrome.driver", "src\\main\\resources\\driver\\chromedriver.exe");
         driver = new ChromeDriver();
