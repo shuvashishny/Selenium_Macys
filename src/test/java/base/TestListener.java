@@ -1,6 +1,6 @@
 package base;
 
-import browser.StartBrowser;
+import browser.Browser;
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.testng.ITestResult;
@@ -16,7 +16,7 @@ public class TestListener extends TestListenerAdapter {
 
     public void onTestFailure(ITestResult tr){
         System.out.println("test failed "+tr.getName());
-        File fileSource = ((TakesScreenshot) StartBrowser.driver)
+        File fileSource = ((TakesScreenshot) Browser.driver)
                 .getScreenshotAs(OutputType.FILE);
 
         try {
