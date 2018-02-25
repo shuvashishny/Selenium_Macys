@@ -1,0 +1,9 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 8, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 60.244 sec <<< FAILURE!
+navigateToMensShose(pages.men.MensShoesTest)  Time elapsed: 6.205 sec  <<< FAILURE!
+java.util.NoSuchElementException: No value present
+	at java.util.Optional.get(Optional.java:135)
+	at pages.HomePage.clickLinkFromTopNavs(HomePage.java:25)
+	at pages.men.MensShoesTest.navigateToMensShose(MensShoesTest.java:20)

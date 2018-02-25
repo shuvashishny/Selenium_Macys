@@ -1,6 +1,6 @@
 package base;
 
-import browser.StartBrowser;
+import browser.Browser;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
@@ -24,7 +24,7 @@ public class TestBase {
     public void startTestMethod(){
 
     }
-    @BeforeSuite
+    @BeforeSuite(alwaysRun = true)
     public void startSuite(){
 
         File directory = new File(SRC_FOLDER);
@@ -50,10 +50,10 @@ public class TestBase {
         System.out.println("Done");
     }
 
-    @AfterMethod
+    @AfterMethod(alwaysRun = true)
     public void tearDownTest(){
-        StartBrowser.driver.close();
-        StartBrowser.driver.quit();
+        Browser.driver.close();
+        Browser.driver.quit();
 
     }
 

@@ -1,6 +1,6 @@
 import base.TestBase;
 import base.TestListener;
-import browser.StartBrowser;
+import browser.Browser;
 import dataprovider.HomePageDataProvider;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
@@ -13,14 +13,14 @@ public class HomePageTest extends TestBase {
 
     @Test(groups = {"regression"}, dataProvider="MacysHomePageData", dataProviderClass=HomePageDataProvider.class)
     public void testHomePage(String linkName){
-        StartBrowser.openBroser().seeAllLinks(linkName);
+        Browser
+                .openBroser()
+                .clickLinkFromTopNavs(linkName);
     }
 
-    @Test(groups = {"smoke"})
+    @Test(groups = {"smoke", "regression"})
     public void testNavNames(){
-        StartBrowser.openBroser().verifyLinkNamesPresent();
+        Browser.openBroser().verifyLinkNamesPresent();
     }
-
-
 
 }
