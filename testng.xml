@@ -2,16 +2,17 @@
 
 <suite name="Selenium Zappos"  parallel="false">
 
+
     <test name="allTests">
         <groups>
             <run>
                 <include name="regression"/>
             </run>
         </groups>
-        <classes>
-            <class name="HomePageTest"/>
-            <class name="pages.men.MensShoesTest"/>
-        </classes>
+        <packages>
+            <package name="alltests.*"/>
+
+        </packages>
     </test>
 
 </suite>
