@@ -1,4 +1,4 @@
-package base;
+package alltests.base;
 
 import browser.Browser;
 import org.testng.annotations.AfterMethod;

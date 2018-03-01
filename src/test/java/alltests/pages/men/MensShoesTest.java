@@ -1,11 +1,12 @@
-package pages.men;
+package alltests.pages.men;
 
-import base.TestBase;
-import base.TestListener;
+import alltests.base.TestBase;
+import alltests.base.TestListener;
 import browser.Browser;
 import org.openqa.selenium.support.PageFactory;
 import org.testng.annotations.Listeners;
 import org.testng.annotations.Test;
+import pages.men.MensShoes;
 
 /**
  * Created by Shuvashish on 2/25/2018.
@@ -16,7 +17,7 @@ public class MensShoesTest extends TestBase{
     @Test(groups = {"regression"})
     public void navigateToMensShose(){
         Browser
-                .openBroser()
+                .openBrowser()
                 .clickLinkFromTopNavs("Men")
                 .clickMensSubcategory("Shoes");
         PageFactory
