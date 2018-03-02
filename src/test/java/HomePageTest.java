@@ -1,4 +1,4 @@
-import browser.StartBrowser;
+import browser.Browser;
 import dataprovider.HomePageDataProvider;
 import org.testng.annotations.Test;
 
@@ -9,17 +9,16 @@ public class HomePageTest {
 
     @Test(dataProvider = "MacysHomePageData", dataProviderClass = HomePageDataProvider.class)
     public void testHomePage(String linkName) {
-        StartBrowser.openBroser().seeAllLinks(linkName);
+        Browser.openBrowser().clickLinkFromTopNavs(linkName);
 
-<<<<<<< HEAD
 
     }
-}
-=======
+
+
     @Test
-    public void testNavNames(){
-        StartBrowser.openBroser().verifyLinkNamesPresent();
+    public void testNavNames() {
+        Browser.openBrowser().verifyLinkNamesPresent();
     }
 
 }
->>>>>>> fcf13a4bd7b5ee3320d0bae48d20083b8b32c1d2
+

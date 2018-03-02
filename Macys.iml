@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" type="JAVA_MODULE" version="4">
+<module org.jetbrains.idea.maven.project.MavenProjectsManager.isMavenModule="true" version="4">
   <component name="NewModuleRootManager" LANGUAGE_LEVEL="JDK_1_8" inherit-compiler-output="false">
     <output url="file://$MODULE_DIR$/target/classes" />
     <output-test url="file://$MODULE_DIR$/target/test-classes" />
@@ -9,11 +9,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
-<<<<<<< HEAD
-    <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
-=======
     <orderEntry type="inheritedJdk" />
->>>>>>> fcf13a4bd7b5ee3320d0bae48d20083b8b32c1d2
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:3.8.1" level="project" />

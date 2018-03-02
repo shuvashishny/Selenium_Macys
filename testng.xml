@@ -1,0 +1,18 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+
+<suite name="Selenium Zappos"  parallel="false">
+
+
+    <test name="allTests">
+        <groups>
+            <run>
+                <include name="regression"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="alltests.*"/>
+
+        </packages>
+    </test>
+
+</suite>

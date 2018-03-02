@@ -1,42 +1,54 @@
 package pages;
 
-import browser.StartBrowser;
 import dataprovider.AllData;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.How;
+import org.testng.Assert;
 
 import java.util.List;
 
+
 public class HomePage {
 
-    List<WebElement> topNavs = StartBrowser.driver.findElements(
-            By.xpath("//a[@class=' top-nav']"));
+    @FindBy(how = How.CSS, using = "a[class=' top-nav']") private List<WebElement> topNavs;
+    @FindBy(how = How.CSS, using = "a[data-expanded='subcategory']")
+    private List<WebElement> mensSubcategories;
 
-    public void seeAllLinks(String linkName){
+
+
+    public HomePage clickLinkFromTopNavs(String linkName){
         for(WebElement element: topNavs ){
             System.out.println(element.getText());
         }
 
         topNavs.stream().filter(element-> element.getText().equals(linkName))
                 .findFirst().get().click();
-<<<<<<< HEAD
+
         System.out.println("this is a test");
         System.out.println("this is second test");
         System.out.println("this is third test");
         System.out.println("this is forth test");
-        System.out.println("for test prozect is working");
-=======
->>>>>>> fcf13a4bd7b5ee3320d0bae48d20083b8b32c1d2
 
 
+
+
+        //This following code is doing the same thing using for loop
         /*for(WebElement element: topNavs){
             if(element.getText().equals(linkName)) {
                 element.click();
                 break;
             }
         }*/
+        return this;
 
+    }
+
+    public void clickMensSubcategory(String subCategoryName){
+        mensSubcategories.stream().filter(scn -> scn.getText()
+                .equalsIgnoreCase(subCategoryName)).findFirst().get().click();
     }
 
     public void verifyLinkNamesPresent(){
