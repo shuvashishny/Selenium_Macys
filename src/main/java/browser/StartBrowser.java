@@ -17,7 +17,7 @@ public class StartBrowser {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
-        driver.navigate().to("https://www.macys.com");
+        driver.navigate().to("https://www.zappos.com");
         return new HomePage();
     }
 }

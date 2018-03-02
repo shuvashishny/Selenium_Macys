@@ -11,6 +11,15 @@ public class HomePageTest {
     public void testHomePage(String linkName) {
         StartBrowser.openBroser().seeAllLinks(linkName);
 
+<<<<<<< HEAD
 
     }
 }
+=======
+    @Test
+    public void testNavNames(){
+        StartBrowser.openBroser().verifyLinkNamesPresent();
+    }
+
+}
+>>>>>>> fcf13a4bd7b5ee3320d0bae48d20083b8b32c1d2

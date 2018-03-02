@@ -9,7 +9,11 @@
       <sourceFolder url="file://$MODULE_DIR$/src/test/java" isTestSource="true" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
+<<<<<<< HEAD
     <orderEntry type="jdk" jdkName="1.8" jdkType="JavaSDK" />
+=======
+    <orderEntry type="inheritedJdk" />
+>>>>>>> fcf13a4bd7b5ee3320d0bae48d20083b8b32c1d2
     <orderEntry type="sourceFolder" forTests="false" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-java:3.8.1" level="project" />
     <orderEntry type="library" name="Maven: org.seleniumhq.selenium:selenium-api:3.8.1" level="project" />

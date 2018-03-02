@@ -11,14 +11,12 @@ public class AllData {
     public static List<String> getAllData() {
 
         List<String> linkNames = new ArrayList<>();
-        linkNames.add("MEN");
-        linkNames.add("HOME");
-        linkNames.add("BED & BATH");
-        linkNames.add("SHOES");
-        linkNames.add("HANDBAGS");
-        linkNames.add("BEAUTY");
-        linkNames.add("KIDS");
-        linkNames.add("WOMEN");
+        linkNames.add("Men");
+        linkNames.add("Sale");
+        linkNames.add("Brands");
+        linkNames.add("Departments");
+        linkNames.add("Kids");
+        linkNames.add("Women");
 
         return linkNames;
     }

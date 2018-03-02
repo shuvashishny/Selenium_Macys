@@ -11,12 +11,12 @@ public class HomePageDataProvider {
     public static Object[][] getHomePageHeaderLinks(){
 
         Object[][] linksName=new Object[6][1];
-        linksName[0][0]= "WOMEN";
-        linksName[1][0]= "MEN";
-        linksName[2][0]= "HOME";
-        linksName[3][0]= "BED & BATH";
-        linksName[4][0]= "SHOES";
-        linksName[5][0]= "HANDBAGS";
+        linksName[0][0]= "Women";
+        linksName[1][0]= "Men";
+        linksName[2][0]= "Kids";
+        linksName[3][0]= "Brands";
+        linksName[4][0]= "Departments";
+        linksName[5][0]= "Sale";
         return linksName;
 
     }
