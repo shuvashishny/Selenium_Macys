@@ -39,6 +39,8 @@ public class HomePage {
         for(WebElement element : topNavs){
             String str = element.getText();
             Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
+            Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
+            Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
         }
     }
 }
