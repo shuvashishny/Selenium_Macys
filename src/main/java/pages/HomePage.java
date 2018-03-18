@@ -2,12 +2,15 @@ package pages;
 
 import dataprovider.AllData;
 import org.openqa.selenium.WebElement;
+
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
 import org.openqa.selenium.support.How;
 import org.testng.Assert;
 
 
 import java.util.List;
+
 
 public class HomePage {
 
@@ -24,6 +27,14 @@ public class HomePage {
 
         topNavs.stream().filter(element-> element.getText().equals(linkName))
                 .findFirst().get().click();
+
+        System.out.println("this is a test");
+        System.out.println("this is second test");
+        System.out.println("this is third test");
+        System.out.println("this is forth test");
+
+
+
 
         //This following code is doing the same thing using for loop
         /*for(WebElement element: topNavs){
@@ -47,6 +58,8 @@ public class HomePage {
 
         for(WebElement element : topNavs){
             String str = element.getText();
+            Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
+            Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
             Assert.assertTrue(AllData.getAllData().contains(str), str+" was not found");
         }
     }

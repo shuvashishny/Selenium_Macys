@@ -17,6 +17,7 @@ public class AllData {
         linkNames.add("Departments");
         linkNames.add("Kids");
         linkNames.add("Women");
+        linkNames.add("boy");
 
         return linkNames;
     }
