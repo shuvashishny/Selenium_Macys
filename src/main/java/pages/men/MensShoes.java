@@ -16,5 +16,7 @@ public class MensShoes {
     public MensShoes verifyMensShosePage(){
        driver.getTitle().contains("Men's Shoes");
         return this;
+//this is my code
+
     }
 }

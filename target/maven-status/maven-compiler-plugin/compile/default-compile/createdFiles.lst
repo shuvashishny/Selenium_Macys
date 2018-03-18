@@ -1,0 +1,5 @@
+dataprovider\AllData.class
+pages\HomePage.class
+browser\Browser.class
+dataprovider\HomePageDataProvider.class
+pages\men\MensShoes.class
