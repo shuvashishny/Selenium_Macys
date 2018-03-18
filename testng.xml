@@ -6,7 +6,7 @@
     <test name="allTests">
         <groups>
             <run>
-                <include name="regression"/>
+                <include name="smoke"/>
             </run>
         </groups>
         <packages>
