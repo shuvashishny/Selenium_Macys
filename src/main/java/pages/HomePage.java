@@ -24,6 +24,7 @@ public class HomePage {
 
         topNavs.stream().filter(element-> element.getText().equals(linkName))
                 .findFirst().get().click();
+        System.out.println("this is test12");
 
         //This following code is doing the same thing using for loop
         /*for(WebElement element: topNavs){
